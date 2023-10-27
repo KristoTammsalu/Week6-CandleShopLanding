@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Merriweather:ital@1&family=Nosifer&family=Pixelify+Sans:wght@500&family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url('../img/img1.webp');
+    background-size: cover;
+    background-position: bottom;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a {
+    background-color: #94a974;
+    color: rgb(249, 248, 249);
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+ }
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+    
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.intro-image__text a:hover {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    background-color: #7e7259;
+    color: #cec5bb;    
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+
+}
+
+.intro-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url('../img/img3.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    padding-top: 6rem;
+    margin-top: -5.4rem;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 81% 4%, 100% 8%, 100% 100%, 82% 100%, 50% 94%, 16% 100%, 0 100%, 0 7%, 15% 5%);
+}
+
+.quality-image__link a{
+    background-color: #89865ebe;
+    color: #cbc7b6;
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+ }
+
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+    
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.quality-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.quality-text {
+    background-color: #8d897a;
+    color: #e0dfdc;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-top: 6rem;
+    margin-top: -3rem;
+    height: 350px;
+    padding: 0 40rem;
+}
+
+.quality-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.origin-image {
+    background-attachment: fixed;
+    background-image: url('../img/imgs1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.origin-image__link a{
+    background-color: #d39eca;
+    color: #f1f6f7;
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+ }
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+    
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.origin-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    height: 250px;
+    background-color: #9195a6;
+    color: #d2d3d3;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem
+}
+
+.footer ul li a{
+    color: #d2d3d3;
+    text-decoration: none;
+}
+
+.footer ul li:hover {
+    color: #d2d3d3;
+    transform: scale(1.5);
+}
